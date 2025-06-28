@@ -3,6 +3,7 @@ import UIKit
 final class ReviewsView: UIView {
 
     let tableView = UITableView()
+    let reviewCountLabel = UILabel()
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -15,7 +16,29 @@ final class ReviewsView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        tableView.frame = bounds.inset(by: safeAreaInsets)
+        
+        let inset = safeAreaInsets
+        let reviewCountLabelHeight: CGFloat = 44.0
+        let tableViewHeight = bounds.height - reviewCountLabelHeight - inset.top - inset.bottom
+
+        tableView.frame = CGRect(
+            x: inset.left,
+            y: inset.top,
+            width: bounds.width - inset.left - inset.right,
+            height: tableViewHeight
+        )
+
+        reviewCountLabel.frame = CGRect(
+            x: 0,
+            y: inset.top + tableViewHeight,
+            width: bounds.width,
+            height: reviewCountLabelHeight
+        )
+    }
+    
+    func configure(count: Int) {
+        let word = Pluralizer.pluralize(count, one: "отзыв", few: "отзыва", many: "отзывов")
+        reviewCountLabel.text = "\(count) \(word)"
     }
 
 }
@@ -27,6 +50,7 @@ private extension ReviewsView {
     func setupView() {
         backgroundColor = .systemBackground
         setupTableView()
+        setupReviewCountLabel()
     }
 
     func setupTableView() {
@@ -34,6 +58,13 @@ private extension ReviewsView {
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
         tableView.register(ReviewCell.self, forCellReuseIdentifier: ReviewCellConfig.reuseId)
+    }
+    
+    func setupReviewCountLabel() {
+        reviewCountLabel.font = .reviewCount
+        reviewCountLabel.textColor = .secondaryLabel
+        reviewCountLabel.textAlignment = .center
+        addSubview(reviewCountLabel)
     }
 
 }
