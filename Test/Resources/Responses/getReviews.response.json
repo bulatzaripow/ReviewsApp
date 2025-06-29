@@ -6,49 +6,72 @@
             "last_name": "Петров",
             "rating": 5,
             "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
-            "created": "1 час назад"
+            "created": "1 час назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/12420183/pexels-photo-12420183.jpeg?_gl=1*exxicn*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzAkdDE3NTExODY5MTUkajYwJGwwJGgw",
+                "https://images.pexels.com/photos/12556233/pexels-photo-12556233.jpeg?_gl=1*ohelfo*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcwNDIkajU5JGwwJGgw",
+                "https://images.pexels.com/photos/12556227/pexels-photo-12556227.jpeg?_gl=1*2ptsby*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxNzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Екатерина",
             "last_name": "Иванова",
             "rating": 3,
             "text": "Скользские ужасно.",
-            "created": "12 минут назад"
+            "created": "12 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/women/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/6283564/pexels-photo-6283564.jpeg?_gl=1*8jndbh*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxMDckajU5JGwwJGgw",
+                "https://images.pexels.com/photos/13966502/pexels-photo-13966502.jpeg?_gl=1*4su79u*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcyMzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Евгения",
             "last_name": "Петрова",
             "rating": 4,
             "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "35 минут назад"
+            "created": "35 минут назад",
+            "avatar_url": null,
+            "photo_urls": []
         },
         {
             "first_name": "Илья",
             "last_name": "Петров",
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "минуту назад"
+            "created": "минуту назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/23.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Никита",
             "last_name": "Иванов",
             "rating": 5,
             "text": "Отлично выглядят, хоть и скользковатые...",
-            "created": "только что"
+            "created": "только что",
+            "avatar_url": null,
+            "photo_urls": [
+                "https://images.pexels.com/photos/7869605/pexels-photo-7869605.jpeg?_gl=1*14d38fl*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODc0NjAkajQ1JGwwJGgw"
+            ]
         },
         {
             "first_name": "Олег",
             "last_name": "Николаев",
             "rating": 1,
             "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
-            "created": "15 минут назад"
+            "created": "15 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/16.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Николай",
             "last_name": "Петров",
             "rating": 2,
             "text": "",
-            "created": "вчера в 12:39"
+            "created": "вчера в 12:39",
+            "avatar_url": "https://randomuser.me/api/portraits/men/3.jpg",
+            "photo_urls": []
         },
 
 
@@ -57,49 +80,72 @@
             "last_name": "Петров",
             "rating": 5,
             "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
-            "created": "1 час назад"
+            "created": "1 час назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/12420183/pexels-photo-12420183.jpeg?_gl=1*exxicn*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzAkdDE3NTExODY5MTUkajYwJGwwJGgw",
+                "https://images.pexels.com/photos/12556233/pexels-photo-12556233.jpeg?_gl=1*ohelfo*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcwNDIkajU5JGwwJGgw",
+                "https://images.pexels.com/photos/12556227/pexels-photo-12556227.jpeg?_gl=1*2ptsby*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxNzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Екатерина",
             "last_name": "Иванова",
             "rating": 3,
             "text": "Скользские ужасно.",
-            "created": "12 минут назад"
+            "created": "12 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/women/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/6283564/pexels-photo-6283564.jpeg?_gl=1*8jndbh*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxMDckajU5JGwwJGgw",
+                "https://images.pexels.com/photos/13966502/pexels-photo-13966502.jpeg?_gl=1*4su79u*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcyMzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Евгения",
             "last_name": "Петрова",
             "rating": 4,
             "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "35 минут назад"
+            "created": "35 минут назад",
+            "avatar_url": null,
+            "photo_urls": []
         },
         {
             "first_name": "Илья",
             "last_name": "Петров",
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "минуту назад"
+            "created": "минуту назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/23.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Никита",
             "last_name": "Иванов",
             "rating": 5,
             "text": "Отлично выглядят, хоть и скользковатые...",
-            "created": "только что"
+            "created": "только что",
+            "avatar_url": null,
+            "photo_urls": [
+                "https://images.pexels.com/photos/7869605/pexels-photo-7869605.jpeg?_gl=1*14d38fl*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODc0NjAkajQ1JGwwJGgw"
+            ]
         },
         {
             "first_name": "Олег",
             "last_name": "Николаев",
             "rating": 1,
             "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
-            "created": "15 минут назад"
+            "created": "15 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/16.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Николай",
             "last_name": "Петров",
             "rating": 2,
             "text": "",
-            "created": "вчера в 12:39"
+            "created": "вчера в 12:39",
+            "avatar_url": "https://randomuser.me/api/portraits/men/3.jpg",
+            "photo_urls": []
         },
 
 
@@ -108,49 +154,72 @@
             "last_name": "Петров",
             "rating": 5,
             "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
-            "created": "1 час назад"
+            "created": "1 час назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/12420183/pexels-photo-12420183.jpeg?_gl=1*exxicn*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzAkdDE3NTExODY5MTUkajYwJGwwJGgw",
+                "https://images.pexels.com/photos/12556233/pexels-photo-12556233.jpeg?_gl=1*ohelfo*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcwNDIkajU5JGwwJGgw",
+                "https://images.pexels.com/photos/12556227/pexels-photo-12556227.jpeg?_gl=1*2ptsby*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxNzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Екатерина",
             "last_name": "Иванова",
             "rating": 3,
             "text": "Скользские ужасно.",
-            "created": "12 минут назад"
+            "created": "12 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/women/44.jpg",
+            "photo_urls": [
+                "https://images.pexels.com/photos/6283564/pexels-photo-6283564.jpeg?_gl=1*8jndbh*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcxMDckajU5JGwwJGgw",
+                "https://images.pexels.com/photos/13966502/pexels-photo-13966502.jpeg?_gl=1*4su79u*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODcyMzIkajU5JGwwJGgw"
+            ]
         },
         {
             "first_name": "Евгения",
             "last_name": "Петрова",
             "rating": 4,
             "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "35 минут назад"
+            "created": "35 минут назад",
+            "avatar_url": null,
+            "photo_urls": []
         },
         {
             "first_name": "Илья",
             "last_name": "Петров",
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
-            "created": "минуту назад"
+            "created": "минуту назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/23.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Никита",
             "last_name": "Иванов",
             "rating": 5,
             "text": "Отлично выглядят, хоть и скользковатые...",
-            "created": "только что"
+            "created": "только что",
+            "avatar_url": null,
+            "photo_urls": [
+                "https://images.pexels.com/photos/7869605/pexels-photo-7869605.jpeg?_gl=1*14d38fl*_ga*ODQ2NzI3ODYwLjE3NTExODY5MTY.*_ga_8JE65Q40S6*czE3NTExODY5MTUkbzEkZzEkdDE3NTExODc0NjAkajQ1JGwwJGgw"
+            ]
         },
         {
             "first_name": "Олег",
             "last_name": "Николаев",
             "rating": 1,
             "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
-            "created": "15 минут назад"
+            "created": "15 минут назад",
+            "avatar_url": "https://randomuser.me/api/portraits/men/16.jpg",
+            "photo_urls": []
         },
         {
             "first_name": "Николай",
             "last_name": "Петров",
             "rating": 2,
             "text": "",
-            "created": "вчера в 12:39"
+            "created": "вчера в 12:39",
+            "avatar_url": "https://randomuser.me/api/portraits/men/3.jpg",
+            "photo_urls": []
         },
     ]
 }
