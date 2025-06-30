@@ -22,6 +22,12 @@ final class ReviewsViewModel: NSObject {
         self.ratingRenderer = ratingRenderer
         self.decoder = decoder
     }
+    
+    func refreshReviews() {
+        state = State()
+        onStateChange?(state)
+        getReviews()
+    }
 
 }
 
