@@ -4,6 +4,10 @@ final class ReviewsView: UIView {
 
     let tableView = UITableView()
     let reviewCountLabel = UILabel()
+    let refreshControl = UIRefreshControl()
+    
+    private let spinner = UIActivityIndicatorView(style: .medium)
+    private let spinnerHeaderView = UIView()
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -12,6 +16,7 @@ final class ReviewsView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        setupSpinner()
     }
 
     override func layoutSubviews() {
@@ -40,6 +45,27 @@ final class ReviewsView: UIView {
         let word = Pluralizer.pluralize(count, one: "отзыв", few: "отзыва", many: "отзывов")
         reviewCountLabel.text = "\(count) \(word)"
     }
+    
+    private func setupSpinner() {
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.startAnimating()
+
+        spinnerHeaderView.addSubview(spinner)
+        spinnerHeaderView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 50)
+
+        NSLayoutConstraint.activate([
+            spinner.centerXAnchor.constraint(equalTo: spinnerHeaderView.centerXAnchor),
+            spinner.centerYAnchor.constraint(equalTo: spinnerHeaderView.centerYAnchor)
+        ])
+    }
+
+    func showSpinnerHeader() {
+        tableView.tableHeaderView = spinnerHeaderView
+    }
+
+    func hideSpinnerHeader() {
+        tableView.tableHeaderView = nil
+    }
 
 }
 
@@ -58,6 +84,7 @@ private extension ReviewsView {
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
         tableView.register(ReviewCell.self, forCellReuseIdentifier: ReviewCellConfig.reuseId)
+        tableView.refreshControl = refreshControl
     }
     
     func setupReviewCountLabel() {
