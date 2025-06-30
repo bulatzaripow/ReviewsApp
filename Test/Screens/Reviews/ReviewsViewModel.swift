@@ -22,6 +22,12 @@ final class ReviewsViewModel: NSObject {
         self.ratingRenderer = ratingRenderer
         self.decoder = decoder
     }
+    
+    func refreshReviews() {
+        state = State()
+        onStateChange?(state)
+        getReviews()
+    }
 
 }
 
@@ -35,7 +41,9 @@ extension ReviewsViewModel {
     func getReviews() {
         guard state.shouldLoad else { return }
         state.shouldLoad = false
-        reviewsProvider.getReviews(offset: state.offset, completion: gotReviews)
+        reviewsProvider.getReviews(offset: state.offset) { [weak self] result in
+            self?.gotReviews(result)
+        }
     }
 
 }
@@ -49,6 +57,7 @@ private extension ReviewsViewModel {
         do {
             let data = try result.get()
             let reviews = try decoder.decode(Reviews.self, from: data)
+            state.totalReviewsCount = reviews.count
             state.items += reviews.items.map(makeReviewItem)
             state.offset += state.limit
             state.shouldLoad = state.offset < reviews.count
@@ -81,10 +90,18 @@ private extension ReviewsViewModel {
     func makeReviewItem(_ review: Review) -> ReviewItem {
         let reviewText = review.text.attributed(font: .text)
         let created = review.created.attributed(font: .created, color: .created)
+        let fullName = review.fullName.attributed(font: .username)
+        
         let item = ReviewItem(
             reviewText: reviewText,
+            fullName: fullName,
+            avatarURL: review.avatarUrl,
+            rating: review.rating,
+            photoURLs: review.photoUrls,
             created: created,
-            onTapShowMore: showMoreReview
+            onTapShowMore: { [weak self] id in
+                self?.showMoreReview(with: id)
+            }
         )
         return item
     }

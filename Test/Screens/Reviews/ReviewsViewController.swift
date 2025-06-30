@@ -22,7 +22,14 @@ final class ReviewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewModel()
+        bindViewModel()
+        reviewsView.showSpinnerHeader()
         viewModel.getReviews()
+        reviewsView.refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+    }
+    
+    @objc private func didPullToRefresh() {
+        viewModel.refreshReviews()
     }
 
 }
@@ -41,6 +48,21 @@ private extension ReviewsViewController {
     func setupViewModel() {
         viewModel.onStateChange = { [weak reviewsView] _ in
             reviewsView?.tableView.reloadData()
+        }
+    }
+    
+    private func bindViewModel() {
+        viewModel.onStateChange = { [weak self] state in
+            guard let self else { return }
+            
+            self.reviewsView.configure(count: state.totalReviewsCount)
+            self.reviewsView.tableView.reloadData()
+            
+            if self.reviewsView.refreshControl.isRefreshing {
+                self.reviewsView.refreshControl.endRefreshing()
+            }
+            
+            self.reviewsView.hideSpinnerHeader()
         }
     }
 
