@@ -89,7 +89,9 @@ private extension ReviewsViewModel {
         let item = ReviewItem(
             reviewText: reviewText,
             fullName: fullName,
+            avatarURL: review.avatarUrl,
             rating: review.rating,
+            photoURLs: review.photoUrls,
             created: created,
             onTapShowMore: { [weak self] id in
                 self?.showMoreReview(with: id)

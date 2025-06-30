@@ -10,6 +10,10 @@ struct Review: Decodable {
     let text: String
     /// Время создания отзыва.
     let created: String
+    /// Аватар
+    let avatarUrl: String?
+    /// Картинки для отзыва
+    let photoUrls: [String]
     
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
@@ -17,6 +21,8 @@ struct Review: Decodable {
         case rating
         case text
         case created
+        case avatarUrl = "avatar_url"
+        case photoUrls = "photo_urls"
     }
     
     var fullName: String {
