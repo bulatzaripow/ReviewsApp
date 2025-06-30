@@ -6,7 +6,7 @@ final class ReviewsView: UIView {
     let reviewCountLabel = UILabel()
     let refreshControl = UIRefreshControl()
     
-    private let spinner = UIActivityIndicatorView(style: .medium)
+    private let spinner = SpinnerView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
     private let spinnerHeaderView = UIView()
 
     required init?(coder: NSCoder) {
@@ -48,14 +48,14 @@ final class ReviewsView: UIView {
     
     private func setupSpinner() {
         spinner.translatesAutoresizingMaskIntoConstraints = false
-        spinner.startAnimating()
-
         spinnerHeaderView.addSubview(spinner)
         spinnerHeaderView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 50)
 
         NSLayoutConstraint.activate([
             spinner.centerXAnchor.constraint(equalTo: spinnerHeaderView.centerXAnchor),
-            spinner.centerYAnchor.constraint(equalTo: spinnerHeaderView.centerYAnchor)
+            spinner.centerYAnchor.constraint(equalTo: spinnerHeaderView.centerYAnchor),
+            spinner.widthAnchor.constraint(equalToConstant: 24),
+            spinner.heightAnchor.constraint(equalToConstant: 24)
         ])
     }
 

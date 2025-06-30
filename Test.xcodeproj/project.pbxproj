@@ -59,6 +59,14 @@
 		FE4B6E762E11CB4C0047F07A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FE4B6E782E12A4D60047F07A /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		21B82DF62D4792300085DAA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -133,6 +141,7 @@
 		21B82E2A2D47B0640085DAA2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FE4B6E782E12A4D60047F07A /* Shared */,
 				21ED1F632D69CF860012D6F6 /* Root */,
 				21B82E372D47B1090085DAA2 /* Reviews */,
 			);
@@ -218,6 +227,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FE4B6E782E12A4D60047F07A /* Shared */,
 			);
 			name = Test;
 			packageProductDependencies = (
